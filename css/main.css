@@ -1,0 +1,29 @@
+/* nav styles */
+.customFont{
+	font-family: 'Lobster', cursive;
+	font-size: 24px;
+	color: #fc0 !important;
+}
+
+.navbar{
+	min-height: 75px;
+	margin-bottom: 0;
+}
+
+.mainNav{
+	padding-top: 10px;
+}
+
+.navbar-inverse
+.navbar-nav>li>a{
+	color: #c5c4c4;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.navbar-inverse
+.navbar-toggle{
+	border-color: #222;
+}
+
+/* video styles */
