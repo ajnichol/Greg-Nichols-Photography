@@ -8,6 +8,7 @@
 	font-family: 'Abril Fatface', cursive;
 	font-size: 22px;
 	color: #fc0 !important;
+	letter-spacing: 1px;
 }
 
 .navbar{
@@ -30,6 +31,8 @@
 .navbar-inverse
 .navbar-nav>li>a:hover{
 	color: #fc0 !important;
+	text-decoration: underline;
+	text-decoration-color: #fff; 
 }
 
 .navbar-inverse
@@ -61,6 +64,9 @@ video::-webkit-media-controls{
 	color: #000;
 	text-align: center;
 	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 1px;
+	border: 3px solid;
+	padding: 20px 10px;
 }
 
 @media screen and (max-width: 600px) {
