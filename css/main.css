@@ -1,3 +1,8 @@
+/* logic styles */
+.fadeIn{
+	opacity: 0;
+}
+
 /* nav styles */
 .customFont{
 	font-family: 'Abril Fatface', cursive;
@@ -17,8 +22,14 @@
 .navbar-inverse
 .navbar-nav>li>a{
 	color: #fff;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-inverse
+.navbar-nav>li>a:hover{
+	color: #fc0 !important;
 }
 
 .navbar-inverse
@@ -63,3 +74,47 @@ video::-webkit-media-controls{
 		font-size: 26px;
 	}
 }
+
+/* quote styles */
+#quoteSection{
+	background-color: #e6e6e6;
+	height: 215px;
+	padding-top: 50px;
+}
+
+#quote{
+	text-align: center;
+	font-family: 'Lobster' , cursive;
+	letter-spacing: 1px;
+}
+
+#author{
+	text-align: right;
+	font-family: 'Lobster' , cursive;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px){
+	#quoteSection{
+		padding-top: 40px;
+	}
+	#quote{
+		font-size: 24px;
+	}
+	#author{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#quoteSection{
+		padding-top: 50px;
+	}
+	#quote{
+		font-size: 20px;
+	}
+	#author{
+		font-size: 20px;
+	}
+}
+
