@@ -78,6 +78,8 @@ video::-webkit-media-controls{
 @media screen and (max-width: 500px) {
 	#videoText h1{
 		font-size: 26px;
+		padding: 0;
+		margin-top: 30px;
 	}
 }
 
@@ -121,6 +123,38 @@ video::-webkit-media-controls{
 	}
 	#author{
 		font-size: 20px;
+	}
+}
+
+/* Bakersfield Life styles */
+#life{
+	background: url('../assets/images-videos/fitting.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 150px 0;
+}
+
+.bannerText{
+	color: #fff;
+	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+	#life{
+		padding: 100px 0;
+	}
+	.bannerText{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.bannerText{
+		font-size: 26px;
 	}
 }
 
