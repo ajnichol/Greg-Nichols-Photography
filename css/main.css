@@ -86,8 +86,7 @@ video::-webkit-media-controls{
 /* quote styles */
 #quoteSection{
 	background-color: #e6e6e6;
-	height: 215px;
-	padding-top: 50px;
+	padding: 90px 0;
 }
 
 #quote{
@@ -103,9 +102,6 @@ video::-webkit-media-controls{
 }
 
 @media screen and (max-width: 768px){
-	#quoteSection{
-		padding-top: 40px;
-	}
 	#quote{
 		font-size: 24px;
 	}
@@ -114,9 +110,15 @@ video::-webkit-media-controls{
 	}
 }
 
+@media screen and (max-width: 690px){
+	#quoteSection{
+		padding: 50px 0;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	#quoteSection{
-		padding-top: 50px;
+		padding: 35px 0;
 	}
 	#quote{
 		font-size: 20px;
@@ -127,20 +129,42 @@ video::-webkit-media-controls{
 }
 
 /* Bakersfield Life styles */
+#aboutLife{
+	background-color: #e6e6e6;
+}
+
 #life{
-	background: url('../assets/images-videos/fitting.jpg');
+	background: url('../assets/images-videos/rankin-ranch.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	text-align: center;
 	padding: 150px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.4s ease-in-out;
+	-moz-transition: filter 0.4s ease-in-out;
+	-ms-transition: filter 0.4s ease-in-out;
+	-o-transition: filter 0.4s ease-in-out;
+	transition: filter 0.4s ease-in-out;
+}
+
+#life:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
 }
 
 .bannerText{
 	color: #fff;
 	font-family: 'Abril Fatface' , cursive;
-	letter-spacing: 1px;
+	letter-spacing: 2px;
 }
 
 @media screen and (max-width: 600px) {
@@ -157,4 +181,64 @@ video::-webkit-media-controls{
 		font-size: 26px;
 	}
 }
+
+/* Life Image Grid Styles */
+.imageList{
+	list-style: none;
+	margin: 20px 0 0 0;
+	padding: 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.imageList:after{
+	clear: both;
+}
+
+.imageList:after, .imageBox:before{
+	content:"";
+	display: table;
+}
+
+.imageList li img{
+	height: 255px;
+	width: auto;
+	margin: 10px;
+	float: left;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+
+.imageBox{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	-webkit-transform: 0.3s ease-in-out;
+	-moz-transform: 0.3s ease-in-out;
+	-ms-transform: 0.3s ease-in-out;
+	-o-transform: 0.3s ease-in-out;
+	transform: 0.3s ease-in-out;
+}
+
+.imageBox:hover{
+	-webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	transform: scale(1.03);
+}
+
+@media screen and (max-width: 990px){
+	.imageBox:hover{
+		transform: none;
+	}
+}
+
 
