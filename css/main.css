@@ -3,6 +3,10 @@
 	opacity: 0;
 }
 
+body{
+	background-color: #e6e6e6;
+}
+
 /* nav styles */
 .customFont{
 	font-family: 'Abril Fatface', cursive;
@@ -85,7 +89,6 @@ video::-webkit-media-controls{
 
 /* quote styles */
 #quoteSection{
-	background-color: #e6e6e6;
 	padding: 90px 0;
 }
 
@@ -129,12 +132,8 @@ video::-webkit-media-controls{
 }
 
 /* Bakersfield Life styles */
-#aboutLife{
-	background-color: #e6e6e6;
-}
-
-#life{
-	background: url('../assets/images-videos/rankin-ranch.jpg');
+#lifeBanner{
+	background: url('../assets/images-videos/bakersfield-sign.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -146,14 +145,14 @@ video::-webkit-media-controls{
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
     filter: grayscale(100%);
-	-webkit-transition: filter 0.4s ease-in-out;
-	-moz-transition: filter 0.4s ease-in-out;
-	-ms-transition: filter 0.4s ease-in-out;
-	-o-transition: filter 0.4s ease-in-out;
-	transition: filter 0.4s ease-in-out;
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
 }
 
-#life:hover{
+#lifeBanner:hover{
 	-webkit-filter: grayscale(0);
 	-moz-filter: grayscale(0);
 	-ms-filter: grayscale(0);
@@ -168,7 +167,10 @@ video::-webkit-media-controls{
 }
 
 @media screen and (max-width: 600px) {
-	#life{
+	#lifeBanner{
+		padding: 100px 0;
+	}
+	#natureBanner{
 		padding: 100px 0;
 	}
 	.bannerText{
@@ -182,30 +184,15 @@ video::-webkit-media-controls{
 	}
 }
 
-/* Life Image Grid Styles */
-.imageList{
-	list-style: none;
-	margin: 20px 0 0 0;
-	padding: 0;
-	display: block;
-	text-align: center;
-	width: 100%;
+.contentSection{
+	margin: 50px 0 50px 0;
 }
 
-.imageList:after{
-	clear: both;
-}
-
-.imageList:after, .imageBox:before{
-	content:"";
-	display: table;
-}
-
-.imageList li img{
-	height: 255px;
+/* Image Grid Styles */
+.contentSection img{
+	height: 250px;
 	width: auto;
 	margin: 10px;
-	float: left;
 	border: 2px solid #000;
 	border-radius: 5px;
 }
@@ -228,17 +215,123 @@ video::-webkit-media-controls{
 }
 
 .imageBox:hover{
-	-webkit-transform: scale(1.03);
-	-moz-transform: scale(1.03);
-	-ms-transform: scale(1.03);
-	-o-transform: scale(1.03);
-	transform: scale(1.03);
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	transform: scale(1.04);
 }
 
 @media screen and (max-width: 990px){
+	.contentSection img{
+		height: 270px;
+		width: auto;
+	}
 	.imageBox:hover{
 		transform: none;
 	}
 }
 
+.content{
+	padding: 40% 0;
+}
+
+@media screen and (max-width: 1199px){
+	.content{
+		padding: 0 0;
+	}
+}
+
+/* Nature Section Styles */
+#natureBanner{
+	background: url('../assets/images-videos/lake-ostego.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 150px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+#natureBanner:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 600px) {
+	#natureBanner{
+		padding: 100px 0;
+	}
+	.contentHeading{
+		font-size: 30px;
+	}
+	.contentDescription{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contentHeading{
+		font-size: 26px;
+	}
+	.contentDescription{
+		font-size: 18px;
+	}
+}
+
+/* Food and Spirits Styles */
+#foodBanner{
+	background: url('../assets/images-videos/three-dishes.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 150px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+#foodBanner:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 600px) {
+	#foodBanner{
+		padding: 100px 0;
+	}
+}
+
+/* Footer Styles */
+footer{
+	width: 100%;
+	background-color: #222222;
+	padding: 25px 0;
+	border-top: 6px solid #777;
+}
 
