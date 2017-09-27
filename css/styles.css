@@ -1,0 +1,626 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* logic styles */
+.fadeIn{
+	opacity: 0;
+}
+
+body{
+	background-color: #e6e6e6;
+}
+
+/* nav styles */
+.customFont{
+	font-family: 'Abril Fatface', cursive;
+	font-size: 22px;
+	color: #fc0 !important;
+	letter-spacing: 1px;
+}
+
+.navbar{
+	min-height: 75px;
+	margin-bottom: 0;
+}
+
+.mainNav{
+	padding-top: 10px;
+}
+
+.navbar-inverse
+.navbar-nav>li>a{
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.navbar-inverse
+.navbar-nav>li>a:hover{
+	color: #fc0 !important;
+	text-decoration: underline;
+	text-decoration-color: #fff; 
+}
+
+.navbar-inverse
+.navbar-toggle{
+	border-color: #222;
+}
+
+/* video styles */
+#videoSection{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	max-height: 100vh;
+	width: 100%;
+}
+
+#headerVideo{
+	width: 100%;
+}
+
+video::-webkit-media-controls{
+	display: none !important;
+}
+
+#videoText h1{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	color: #000;
+	text-align: center;
+	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 1px;
+	border: 3px solid;
+	padding: 20px 10px;
+}
+
+@media screen and (max-width: 600px) {
+	#videoText h1{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#videoText h1{
+		font-size: 26px;
+		padding: 0;
+		margin-top: 30px;
+	}
+}
+
+/* quote styles */
+#quoteSection{
+	padding: 110px 0;
+}
+
+#quote{
+	text-align: center;
+	font-family: 'Lobster' , cursive;
+	letter-spacing: 1px;
+}
+
+#author{
+	text-align: right;
+	font-family: 'Lobster' , cursive;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px){
+	#quote{
+		font-size: 24px;
+	}
+	#author{
+		font-size: 24px;
+	}
+}
+
+@media screen and (max-width: 690px){
+	#quoteSection{
+		padding: 50px 0;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	#quoteSection{
+		padding: 35px 0;
+	}
+	#quote{
+		font-size: 20px;
+	}
+	#author{
+		font-size: 20px;
+	}
+}
+
+/* Bakersfield Life styles */
+#lifeBanner{
+	background: url('../assets/images-videos/bakersfield-sign.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 180px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+#lifeBanner:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.bannerText{
+	color: #fff;
+	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 2.5px;
+	font-size: 42px;
+	text-shadow: 2px 2px 4px #000;
+}
+
+@media screen and (max-width: 600px) {
+	#lifeBanner{
+		padding: 100px 0;
+	}
+	#natureBanner{
+		padding: 100px 0;
+	}
+	.bannerText{
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.bannerText{
+		font-size: 26px;
+	}
+}
+
+.contentSection{
+	margin: 50px 0 50px 0;
+}
+
+/* Image Grid Styles */
+.contentSection img{
+	height: 250px;
+	width: auto;
+	margin: 10px;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+
+.imageBox{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	-webkit-transform: 0.3s ease-in-out;
+	-moz-transform: 0.3s ease-in-out;
+	-ms-transform: 0.3s ease-in-out;
+	-o-transform: 0.3s ease-in-out;
+	transform: 0.3s ease-in-out;
+}
+
+.imageBox:hover{
+	-webkit-transform: scale(1.04);
+	-moz-transform: scale(1.04);
+	-ms-transform: scale(1.04);
+	-o-transform: scale(1.04);
+	transform: scale(1.04);
+}
+
+@media screen and (max-width: 990px){
+	.contentSection img{
+		height: 270px;
+		width: auto;
+	}
+	.imageBox:hover{
+		transform: none;
+	}
+}
+
+.content{
+	padding: 40% 0;
+}
+
+@media screen and (max-width: 1199px){
+	.content{
+		padding: 0 0;
+	}
+}
+
+/* Nature Section Styles */
+#natureBanner{
+	background: url('../assets/images-videos/lake-ostego.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 180px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+#natureBanner:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 600px) {
+	#natureBanner{
+		padding: 100px 0;
+	}
+	.contentHeading{
+		font-size: 30px;
+	}
+	.contentDescription{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.contentHeading{
+		font-size: 26px;
+	}
+	.contentDescription{
+		font-size: 18px;
+	}
+}
+
+/* Food and Spirits Styles */
+#foodBanner{
+	background: url('../assets/images-videos/three-dishes.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	padding: 180px 0;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+#foodBanner:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+@media screen and (max-width: 600px) {
+	#foodBanner{
+		padding: 100px 0;
+	}
+}
+
+/* Featured Styles */
+.featured1{
+	background: url('../assets/images-videos/eberle-2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured1:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured2{
+	background: url('../assets/images-videos/interior.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured2:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured3{
+	background: url('../assets/images-videos/exterior.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured3:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured4{
+	background: url('../assets/images-videos/wine-storage.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured4:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured5{
+	background: url('../assets/images-videos/wedding.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured5:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured6{
+	background: url('../assets/images-videos/deserts.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured6:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured7{
+	background: url('../assets/images-videos/groundbreaking.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured7:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured8{
+	background: url('../assets/images-videos/steak-wine.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured8:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured9{
+	background: url('../assets/images-videos/katie-lydia.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured9:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.featured10{
+	background: url('../assets/images-videos/bistro-interior.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+    filter: grayscale(100%);
+	-webkit-transition: filter 0.3s ease-in-out;
+	-moz-transition: filter 0.3s ease-in-out;
+	-ms-transition: filter 0.3s ease-in-out;
+	-o-transition: filter 0.3s ease-in-out;
+	transition: filter 0.3s ease-in-out;
+}
+
+.featured10:hover{
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+/* Footer Styles */
+footer{
+	width: 100%;
+	background-color: #222222;
+	padding: 25px 0;
+	border-top: 6px solid #777;
+}
+
