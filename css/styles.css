@@ -25,6 +25,12 @@ body{
 	margin-bottom: 0;
 }
 
+@media screen and (max-width: 600px){
+	.navbar{
+		position: static;
+	}
+}
+
 .mainNav{
 	padding-top: 10px;
 }
@@ -52,7 +58,6 @@ body{
 /* video styles */
 #videoSection{
 	position: relative;
-	width: 100%;
 	overflow: hidden;
 	max-height: 100vh;
 	width: 100%;
@@ -82,6 +87,7 @@ video::-webkit-media-controls{
 @media screen and (max-width: 600px) {
 	#videoText h1{
 		font-size: 30px;
+		margin: 0;
 	}
 }
 
@@ -89,7 +95,6 @@ video::-webkit-media-controls{
 	#videoText h1{
 		font-size: 26px;
 		padding: 0;
-		margin-top: 30px;
 	}
 }
 
@@ -102,38 +107,40 @@ video::-webkit-media-controls{
 	text-align: center;
 	font-family: 'Lobster' , cursive;
 	letter-spacing: 1px;
+	font-size: 34px;
 }
 
 #author{
 	text-align: right;
 	font-family: 'Lobster' , cursive;
 	letter-spacing: 1px;
+	font-size: 34px;
 }
 
 @media screen and (max-width: 768px){
 	#quote{
-		font-size: 24px;
+		font-size: 26px;
 	}
 	#author{
-		font-size: 24px;
+		font-size: 26px;
 	}
 }
 
 @media screen and (max-width: 690px){
 	#quoteSection{
-		padding: 50px 0;
+		padding: 70px 0;
 	}
 }
 
 @media screen and (max-width: 500px) {
 	#quoteSection{
-		padding: 35px 0;
+		padding: 55px 0;
 	}
 	#quote{
-		font-size: 20px;
+		font-size: 22px;
 	}
 	#author{
-		font-size: 20px;
+		font-size: 22px;
 	}
 }
 
@@ -172,6 +179,16 @@ video::-webkit-media-controls{
 	letter-spacing: 2.5px;
 	font-size: 42px;
 	text-shadow: 2px 2px 4px #000;
+}
+
+@media screen and (max-width: 766px){
+	#lifeBanner{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -231,10 +248,6 @@ video::-webkit-media-controls{
 }
 
 @media screen and (max-width: 990px){
-	.contentSection img{
-		height: 270px;
-		width: auto;
-	}
 	.imageBox:hover{
 		transform: none;
 	}
@@ -277,6 +290,16 @@ video::-webkit-media-controls{
 	-ms-filter: grayscale(0);
 	-o-filter: grayscale(0);
 	filter: grayscale(0);
+}
+
+@media screen and (max-width: 766px){
+	#natureBanner{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -327,6 +350,16 @@ video::-webkit-media-controls{
 	-ms-filter: grayscale(0);
 	-o-filter: grayscale(0);
 	filter: grayscale(0);
+}
+
+@media screen and (max-width: 766px){
+	#foodBanner{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -614,6 +647,79 @@ video::-webkit-media-controls{
 	-ms-filter: grayscale(0);
 	-o-filter: grayscale(0);
 	filter: grayscale(0);
+}
+
+@media screen and (max-width: 766px){
+	.featured1{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured2{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured3{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured4{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured5{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured6{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured7{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured8{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured9{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
+	.featured10{
+		-webkit-filter: grayscale(0);
+		-moz-filter: grayscale(0);
+		-ms-filter: grayscale(0);
+		-o-filter: grayscale(0);
+	    filter: grayscale(0);
+	}
 }
 
 /* Footer Styles */
