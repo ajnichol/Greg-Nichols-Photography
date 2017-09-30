@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+	function imageRotation(){
+		$('.imageContainer .backgroundImage').last().fadeOut(1000, function(){
+			$(this).insertBefore($('.imageContainer .backgroundImage').first()).show();
+		})
+	}
+
+	setInterval(function(){
+		imageRotation();
+	}, 7000);
+
 	$(window).scroll(function(){
 
 		$('.fadeIn').each(function(){

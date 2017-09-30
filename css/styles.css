@@ -3,13 +3,23 @@
 	padding: 0;
 }
 
+html body{
+	height: 100%;
+}
+
 /* logic styles */
 .fadeIn{
 	opacity: 0;
 }
 
 body{
+	display: flex;
+	flex-direction: column;
 	background-color: #e6e6e6;
+}
+
+.stickyFooter{
+	flex: 1 0 auto;
 }
 
 /* nav styles */
@@ -510,7 +520,7 @@ video::-webkit-media-controls{
 }
 
 .featured6{
-	background: url('../assets/images-videos/deserts.jpg');
+	background: url('../assets/images-videos/desserts.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -720,6 +730,218 @@ video::-webkit-media-controls{
 		-o-filter: grayscale(0);
 	    filter: grayscale(0);
 	}
+}
+
+/* Bio Styles */
+.imageContainer{
+	height: 100vh;
+	width: 100%;
+	position: relative;
+}
+
+#image1{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/redvelvet-cake.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#image2{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/redbud-tree.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#image3{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/milkshakes.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#image4{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/yellow-field.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#image5{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/side-car.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#image6{
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	background: url('../assets/images-videos/pool.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.bioSection{
+	position: relative; 
+	height: 100vh; 
+	width: 100%; 
+	background-color: rgba(210, 207, 205, 0.5);
+}
+
+.bioContent{
+	padding: 70px 0;
+}
+
+#profilePicture{
+	height: 350px;
+	width: auto;
+	border-radius: 5px;
+	border: 2px solid #000;
+	margin-top: 20px;
+}
+
+.bioSection h3{
+	color: #000;
+	text-align: center;
+	font-family: 'Lobster' , cursive;
+	letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1199px){
+	.bioContent{
+		padding: 45px 0;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.bioSection h3{
+		font-size: 22px;
+	}
+	.bioContent{
+		padding: 35px 0;
+	}
+	.signature{
+		margin-top: 10px;
+	}
+	#profilePicture{
+		margin-top: 80px;
+		height: 325px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	.bioContent{
+		padding: 25px 0;
+	}
+	.bioSection h3{
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	#profilePicture{
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 725px){
+	#profilePicture{
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 653px){
+	#profilePicture{
+		height: 280px;
+	}
+}
+
+@media screen and (max-width: 615px){
+	.bioSection h3{
+		font-size: 19px;
+	}
+}
+
+@media screen and (max-width: 520px){
+	#profilePicture{
+		height: 265px;
+	}
+}
+
+@media screen and (max-width: 504px){
+	.bioSection h3{
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 483px){
+	#profilePicture{
+		height: 258px;
+	}
+}
+
+@media screen and (max-width: 448px){
+	#profilePicture{
+		height: 248px;
+	}
+	.bioSection h3{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 417px){
+	#profilePicture{
+		height: 240px;
+	}
+}
+
+/* Contact Styles */
+.contactSection{
+	background: url('../assets/images-videos/photographer.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+.contactContent{
+	padding: 50px 0;
+}
+
+.contactSection h1{
+	color: #f3c200;
+	text-decoration: underline;
+	font-size: 50px;
+	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 4px #000;
+}
+
+.contactSection h2{
+	color: #fff;
+	font-size: 38px;
+	font-family: 'Abril Fatface' , cursive;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 4px #000;
+	margin: 30px 20px 30px 0;
 }
 
 /* Footer Styles */
