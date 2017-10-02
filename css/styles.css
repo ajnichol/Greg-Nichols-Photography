@@ -305,11 +305,14 @@ video::-webkit-media-controls{
 .moreBtn{
     background-color: #fc0;
     border: none;
-    color: white !important;
     padding: 12px 28px;
-    text-decoration: none !important;
     font-size: 20px;
     cursor: pointer;
+}
+
+#moreLink{
+	text-decoration: none !important;
+	color: white !important;
 }
 
 /* Nature Section Styles */
@@ -503,7 +506,7 @@ video::-webkit-media-controls{
 }
 
 .featured4{
-	background: url('../assets/images-videos/wine-storage.JPG');
+	background: url('../assets/images-videos/wine-storage.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
