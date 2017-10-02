@@ -302,7 +302,7 @@ video::-webkit-media-controls{
 	}
 }
 
-.moreBtn{
+.content div .moreBtn{
     background-color: #fc0;
     border: none;
     padding: 12px 28px;
@@ -310,7 +310,7 @@ video::-webkit-media-controls{
     cursor: pointer;
 }
 
-#moreLink{
+.content div #moreLink{
 	text-decoration: none !important;
 	color: white !important;
 }
@@ -506,7 +506,7 @@ video::-webkit-media-controls{
 }
 
 .featured4{
-	background: url('../assets/images-videos/wine-storage.png');
+	background: url('../assets/images-videos/wine-bottles.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
