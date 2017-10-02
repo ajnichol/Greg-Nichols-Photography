@@ -30,6 +30,12 @@ body{
 	letter-spacing: 1px;
 }
 
+@media screen and (max-width: 392px){
+	.customFont{
+		font-size: 19px;
+	}
+}
+
 .navbar{
 	min-height: 75px;
 	margin-bottom: 0;
@@ -108,6 +114,14 @@ video::-webkit-media-controls{
 	}
 }
 
+@media screen and (max-width: 440px){
+	#videoText h1{
+		font-size: 23px;
+		border: 2px solid;
+		padding: 2px;
+	}
+}
+
 /* quote styles */
 #quoteSection{
 	padding: 110px 0;
@@ -154,7 +168,7 @@ video::-webkit-media-controls{
 	}
 }
 
-/* Bakersfield Life styles */
+/* index styles */
 #lifeBanner{
 	background: url('../assets/images-videos/bakersfield-sign.jpg');
 	background-size: cover;
@@ -232,6 +246,14 @@ video::-webkit-media-controls{
 	border-radius: 5px;
 }
 
+@media screen and (max-width: 390px){
+	.contentSection img{
+		height: 215px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
 .imageBox{
 	width: 100%;
 	height: 100%;
@@ -264,13 +286,30 @@ video::-webkit-media-controls{
 }
 
 .content{
-	padding: 40% 0;
+	padding: 35% 0;
+}
+
+.content h3{
+	padding-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px){
 	.content{
 		padding: 0 0;
 	}
+	#outdoorBtn{
+		margin-bottom: 30px;
+	}
+}
+
+.moreBtn{
+    background-color: #fc0;
+    border: none;
+    color: white !important;
+    padding: 12px 28px;
+    text-decoration: none !important;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 /* Nature Section Styles */
@@ -464,7 +503,7 @@ video::-webkit-media-controls{
 }
 
 .featured4{
-	background: url('../assets/images-videos/wine-storage.jpg');
+	background: url('../assets/images-videos/wine-storage.JPG');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -734,13 +773,13 @@ video::-webkit-media-controls{
 
 /* Bio Styles */
 .imageContainer{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: relative;
 }
 
 #image1{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/redvelvet-cake.jpg');
@@ -750,7 +789,7 @@ video::-webkit-media-controls{
 }
 
 #image2{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/redbud-tree.jpg');
@@ -760,7 +799,7 @@ video::-webkit-media-controls{
 }
 
 #image3{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/milkshakes.jpg');
@@ -770,7 +809,7 @@ video::-webkit-media-controls{
 }
 
 #image4{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/yellow-field.jpg');
@@ -780,7 +819,7 @@ video::-webkit-media-controls{
 }
 
 #image5{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/side-car.jpg');
@@ -790,7 +829,7 @@ video::-webkit-media-controls{
 }
 
 #image6{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: absolute;
 	background: url('../assets/images-videos/pool.jpg');
@@ -801,7 +840,7 @@ video::-webkit-media-controls{
 
 .bioSection{
 	position: relative; 
-	height: 100vh; 
+	height: 100%; 
 	width: 100%; 
 	background-color: rgba(210, 207, 205, 0.5);
 }
@@ -860,18 +899,6 @@ video::-webkit-media-controls{
 	}
 }
 
-@media screen and (max-width: 725px){
-	#profilePicture{
-		height: 300px;
-	}
-}
-
-@media screen and (max-width: 653px){
-	#profilePicture{
-		height: 280px;
-	}
-}
-
 @media screen and (max-width: 615px){
 	.bioSection h3{
 		font-size: 19px;
@@ -882,9 +909,6 @@ video::-webkit-media-controls{
 	#profilePicture{
 		height: 265px;
 	}
-}
-
-@media screen and (max-width: 504px){
 	.bioSection h3{
 		font-size: 18px;
 	}
@@ -897,9 +921,6 @@ video::-webkit-media-controls{
 }
 
 @media screen and (max-width: 448px){
-	#profilePicture{
-		height: 248px;
-	}
 	.bioSection h3{
 		font-size: 17px;
 	}
@@ -911,6 +932,8 @@ video::-webkit-media-controls{
 	}
 }
 
+
+
 /* Contact Styles */
 .contactSection{
 	background: url('../assets/images-videos/photographer.jpeg');
@@ -918,7 +941,7 @@ video::-webkit-media-controls{
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 }
 
