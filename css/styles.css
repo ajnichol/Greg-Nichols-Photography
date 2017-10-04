@@ -978,3 +978,8 @@ footer{
 	border-top: 6px solid #777;
 }
 
+#mySignature{
+	text-decoration: none;
+	cursor: pointer;
+}
+
