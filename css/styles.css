@@ -176,7 +176,7 @@ video::-webkit-media-controls{
 	background-position: center;
 	background-repeat: no-repeat;
 	text-align: center;
-	padding: 180px 0;
+	padding: 218px 0;
 	-webkit-filter: grayscale(100%);
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
@@ -217,7 +217,7 @@ video::-webkit-media-controls{
 
 @media screen and (max-width: 600px) {
 	#lifeBanner{
-		padding: 100px 0;
+		padding: 132px 0;
 	}
 	#natureBanner{
 		padding: 100px 0;
